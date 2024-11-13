@@ -2,7 +2,7 @@ package org.sanaa.design.builder.demo1test.entity;
 
 
 import jakarta.persistence.*;
-import org.sanaa.design.builder.demo1test.entity.enums.VisitorStatus;
+import org.sanaa.design.builder.demo1test.enums.VisitorStatus;
 
 import java.time.LocalDateTime;
 

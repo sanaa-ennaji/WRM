@@ -1,4 +1,4 @@
-package org.sanaa.design.builder.demo1test.entity;
+package org.sanaa.design.builder.demo1test.embedded;
 
 import jakarta.persistence.Embeddable;
 
@@ -7,13 +7,12 @@ import java.io.Serializable;
 @Embeddable
 public class VisitEmbbedable implements Serializable {
     private Long visitorId;
-    private Long waitingRoomId;
-
+    private Long waitingListId;
 
     public VisitEmbbedable() {}
 
-    public VisitEmbbedable(Long visitorId, Long waitingRoomId) {
+    public VisitEmbbedable(Long visitorId, Long waitingListId) {
         this.visitorId = visitorId;
-        this.waitingRoomId = waitingRoomId;
+        this.waitingListId = waitingListId;
     }
 }

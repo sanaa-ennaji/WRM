@@ -1,10 +1,11 @@
-
-FROM openjdk:17-jdk-slim
+FROM openjdk:22-jdk-slim
 
 WORKDIR /app
 
-COPY target/myapp.jar myapp.jar
+
+COPY target/WRMG-0.0.1-SNAPSHOT.jar WRMG-0.0.1-SNAPSHOT.jar
 
 EXPOSE 8888
 
-ENTRYPOINT ["java", "-jar", "myapp.jar"]
+
+ENTRYPOINT ["java", "-jar", "WRMG-0.0.1-SNAPSHOT.jar"]

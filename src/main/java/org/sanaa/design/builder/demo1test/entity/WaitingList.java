@@ -14,6 +14,6 @@ public class WaitingList {
 
     private LocalDate date;
 
-    @OneToMany(mappedBy = "waitingRoom")
+    @OneToMany(mappedBy = "waitingList")
     private List<Visit> visits;
 }

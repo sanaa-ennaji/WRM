@@ -1,6 +1,7 @@
 package org.sanaa.design.builder.demo1test.entity;
 
 import jakarta.persistence.*;
+import org.sanaa.design.builder.demo1test.embedded.VisitEmbbedable;
 
 import java.time.LocalDateTime;
 
@@ -10,7 +11,7 @@ public class Visit {
     private VisitEmbbedable visitEmbbedable;
 
     @ManyToOne
-    @MapsId("visitEmbbedable")
+    @MapsId("visitorId")
     private Visitor visitor;
 
     @ManyToOne
